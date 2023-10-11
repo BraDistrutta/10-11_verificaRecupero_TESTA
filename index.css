@@ -66,8 +66,8 @@ section.eventi div{
 .tpsit{ background-color: salmon;}
 .tpsit:after{ content: 'TPSIT';}
 
-.info:after{ content: 'INFORMATICA'; }
-.info{ background-color: blue;}
+.informatica:after{ content: 'INFORMATICA'; }
+.informatica{ background-color: blue;}
 
 .reti:after{ content: 'SISTEMI e RETI'; }
 .reti{background-color: green;}
@@ -81,8 +81,8 @@ section.eventi div{
 .religione:after{ content: 'RELIGIONE'; }
 .religione { background-color: orange;}
 
-.mate:after{ content: 'MATEMATICA'; }
-.mate{    background-color: rgb(9, 174, 133);}
+.matematica:after{ content: 'MATEMATICA'; }
+.matematica{    background-color: rgb(9, 174, 133);}
 
 .gestione:after{ content: 'GESTIONE PROGETTI'; }
 .gestione {    background-color: gray;}
@@ -90,8 +90,8 @@ section.eventi div{
 .storia:after{ content: 'STORIA'; }
 .storia {    background-color: rgb(184, 16, 16);}
 
-.gin:after{ content: 'SCIENZE MOTORIE'; }
-.gin{  background-color: brown;}
+.scienze:after{ content: 'SCIENZE MOTORIE'; }
+.scienze{  background-color: brown;}
 
 
 footer{
