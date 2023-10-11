@@ -1,6 +1,25 @@
 var classi = ["tpsit", "info", "reti", "inglese", "lettere", "religione", "mate", "gestione", "storia", "gin"];
 
+window.onload = async function () {
+    let busta = await fetch("http://localhost:63342/10-11_verificaRecupero_TESTA/server/eventi.php", )
+    let response = await busta.json();
+    console.log(response);
+    let eventi = response.eventi;
+    let nomi = response.nomi;
+    console.log(nomi);
 
+    for(let evento of eventi){
+        if(evento.data.split("-")[1]== "10") {
+            let giorno = evento.data.split("-")[2];
+            let nome = nomi[evento.codDesc - 1];
+            console.log("nome:"+nome.descr);
+            console.log("giorno:"+giorno);
+            let td = document.getElementById("att" + giorno);
+            td.innerHTML += '<div class ="' + nome.descr.toLowerCase() + '"></div>'
+        }
+    }
+
+}
 /**
     PER TUTTE LE PAGINE:
     1) Mettere il proprio cognome e nome nel footer
