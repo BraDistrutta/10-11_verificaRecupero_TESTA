@@ -5,38 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario</title>
     <link rel="stylesheet" href="index.css">
+    <script src="js/inserisci.js"></script>
 </head>
 <body>
     <header>
         OTTOBRE 2023
     </header>
     <main>
-        <input type="date" placeholder="date">
+        <input type="date" placeholder="date" id="data">
         <label for="selSlot">SLOT TEMPORALI</label>
         <!-- Da creare dinamicamente -->
         <select id="selSlot">
-            <option>1° ora</option>
-            <option>2° ora</option>
-            <option>3° ora</option>
-            <option>4° ora</option>
-            <option>5° ora</option>
-            <option>6° ora</option>
+            <option value="1">1° ora</option>
+            <option value="2">2° ora</option>
+            <option value="3">3° ora</option>
+            <option value="4">4° ora</option>
+            <option value="5">5° ora</option>
+            <option value="6">6° ora</option>
         </select>
         <label for="selMateria">MATERIA:</label>
         <!-- Da creare dinamicamente -->
        <select id="selMateria">
-           <option>TPSIT</option>
-           <option>INFORMATICA</option>
-           <option>SISTEMI e RETI</option>
-           <option>INGLESE</option>
-           <option>LETTERE</option>
-           <option>RELIGIONE</option>
-           <option>MATEMATICA</option>
-           <option>GESTIONE PROGETTI</option>
-           <option>STORIA</option>
-           <option>SCIENZE MOTORIE</option>
        </select>
-        <button>Inserisci</button>
+        <button id="btnInserisci">Inserisci</button>
     </main>
     <nav>
         <a href="index.html"><span class="material-symbols-outlined">calendar_month</span></a>
